@@ -16,8 +16,8 @@ class App extends React.Component {
   };
 
   render() {
-    return <h1>Daniel Poveda in App</h1>;
+    return <UserList users={this.state.users} />;
   }
 }
 
-render(<h1>Daniel out of App</h1>, document.getElementById('app'));
+render(<App />, document.getElementById('app'));
